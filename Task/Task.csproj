@@ -69,26 +69,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="MarketScreen.aspx" />
-    <Content Include="OrderScreen.aspx" />
+    <Content Include="Controller\MarketScreen.aspx" />
+    <Content Include="Controller\OrderScreen.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="MarketScreen.aspx.cs">
+    <Compile Include="Controller\MarketScreen.aspx.cs">
       <DependentUpon>MarketScreen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MarketScreen.aspx.designer.cs">
+    <Compile Include="Controller\MarketScreen.aspx.designer.cs">
       <DependentUpon>MarketScreen.aspx</DependentUpon>
     </Compile>
-    <Compile Include="OrderScreen.aspx.cs">
+    <Compile Include="Controller\OrderScreen.aspx.cs">
       <DependentUpon>OrderScreen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="OrderScreen.aspx.designer.cs">
+    <Compile Include="Controller\OrderScreen.aspx.designer.cs">
       <DependentUpon>OrderScreen.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
