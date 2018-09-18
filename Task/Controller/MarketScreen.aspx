@@ -25,6 +25,23 @@
 </head>
 <body>
     <form id="form1" runat="server">
+
+          <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        <asp:Timer ID="Timer1" OnTick="Timer1_Tick" runat="server" Interval="10000" />
+
+        <asp:UpdatePanel ID="StockPricePanel" runat="server" UpdateMode="Conditional">
+        <Triggers>
+            <asp:AsyncPostBackTrigger ControlID="Timer1" />
+        </Triggers>
+            <ContentTemplate>
+            Stock price is <asp:Label id="StockPrice" runat="server"></asp:Label><BR />
+            as of <asp:Label id="TimeOfPrice" runat="server"></asp:Label>  
+            <br />
+
+        </ContentTemplate>
+        
+        </asp:UpdatePanel>
+
         <div>
             <table class="auto-style1">
                 <tr>
@@ -61,6 +78,8 @@
                     </tr>
                 </table>
         </div>
+        
+
     </form>
 </body>
 </html>

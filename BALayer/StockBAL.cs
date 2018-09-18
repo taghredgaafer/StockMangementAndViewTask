@@ -15,8 +15,11 @@ namespace BALayer
         {
             return StockDAL.sto;
         }
+        //public static List<Stock> GetPrice()
+        //{
+        //    return StockDAL.prices;
+        //}
 
-        
 
     }
 

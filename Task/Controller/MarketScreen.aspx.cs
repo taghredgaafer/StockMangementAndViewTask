@@ -58,7 +58,7 @@ namespace Task
                 grd_view.DataBind();
                 grd_view2.DataBind();
 
-                Response.AppendHeader("Refresh", "10");
+                //Response.AppendHeader("Refresh", "10");
 
 
             }
@@ -72,6 +72,19 @@ namespace Task
         protected void GridView1_SelectedIndexChanged2(object sender, EventArgs e)
         {
             
+        }
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+
+            StockPrice.Text =  GetStockPrice();
+                TimeOfPrice.Text = DateTime.Now.ToLongTimeString();
+            
+        }
+        private string GetStockPrice()
+        {
+            double randomStockPrice = 50 + new Random().NextDouble();
+            return randomStockPrice.ToString("C");
         }
     }
 }

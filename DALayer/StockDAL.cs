@@ -45,10 +45,12 @@ namespace DALayer
             new Stock {ID = 28, Name = "Qihoo", Price = 9 * s},
            
         };
-        public static List<Stock> GetAll()
-        {
-            return sto;
-        }
+
+        //public static List<Stock> prices = new List<Stock>
+        //{
+        //    new Stock {Price = 1 * s},
+        //};
+        
 
 
      }
