@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BALayer
 {
-    class StockBAL
+    public class StockBAL
     {
 
         public static List<Stock> GetAll ()

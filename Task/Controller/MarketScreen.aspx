@@ -17,6 +17,9 @@
         .auto-style4 {
             height: 26px;
         }
+        .auto-style5 {
+            width: 664px;
+        }
     </style>
 </head>
 <body>
@@ -38,12 +41,24 @@
                     </td>
                 </tr>
                 </table>
-            <asp:GridView ID="grd_view" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged2" Width="927px" AutoGenerateColumns ="False">
+            <table class="auto-style5">
+                <tr>
+                    <td>
+            <asp:GridView ID="grd_view" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged2" Width="361px" AutoGenerateColumns ="False">
                 <Columns>
                     <asp:BoundField DataField ="Name"  HeaderText =" Stock Name"/>
-                <%--     <asp:BoundField DataField =" Price"  HeaderText =" Price"/>--%>
                 </Columns>
             </asp:GridView>
+                        </td>
+                    <td>
+            <asp:GridView ID="grd_view2" runat="server" Width="447px"  AutoGenerateColumns ="false">
+                <Columns>
+                    <asp:BoundField DataField ="Price"  HeaderText =" Price"/>
+                </Columns>
+            </asp:GridView>
+                        </td>
+                    </tr>
+                </table>
         </div>
     </form>
 </body>

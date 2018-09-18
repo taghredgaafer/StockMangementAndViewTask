@@ -7,6 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BALayer;
 
 namespace Task
 {
@@ -16,17 +17,39 @@ namespace Task
         {
             if (!IsPostBack)
             {
-                List<Stock> stockes = StockDAL.GetAll();
+                //Random rand = new Random();
+                //List<Int32> Price = new List<Int32>();
+                //for (Int32 i = 0; i < 101; i++)
+                //{
+                //    Int32 curValue = rand.Next(1, 100);
+                //    while (Price.Exists(value => value == curValue))
+                //    {
+                //        curValue = rand.Next(1, 100);
+                //    }
+                //    Price.Add(curValue);
+                //}
+
+                List<Stock> stockes = StockBAL.GetAll();
                 grd_view.Visible = true;
+                //grd_view2.Visible = true;
                 DataTable dt = new DataTable();
+                DataTable dt2 = new DataTable();
+
                 for (int i = 0; i < stockes.Capacity; i++)
                 {
                     DataRow toInsert = dt.NewRow();
+                    DataRow toInsert2 = dt.NewRow();
                     dt.Rows.InsertAt(toInsert, i);
+                    dt.Rows.InsertAt(toInsert2, i);
+
+                    //dt.Rows[i]["Price"] = Price;
                     //dt.Rows[i]["test"] = stockes[i].ToString();
+
                 }
+                grd_view2.DataSource = stockes;
                 grd_view.DataSource = stockes;
                 grd_view.DataBind();
+                grd_view2.DataBind();
             }
         }
 

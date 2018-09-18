@@ -22,7 +22,12 @@ namespace BELayer
             set { _id = value; }
         }
 
-
+        private int _price;
+        public int Price
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
 
 
     }
