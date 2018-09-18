@@ -34,10 +34,10 @@
             <asp:AsyncPostBackTrigger ControlID="Timer1" />
         </Triggers>
             <ContentTemplate>
-            Stock price is <asp:Label id="StockPrice" runat="server"></asp:Label><BR />
-            as of <asp:Label id="TimeOfPrice" runat="server"></asp:Label>  
+            Stock price is <asp:Label id="StockPrice" runat="server" BackColor="#FFFF99"></asp:Label><BR />
+            as of <asp:Label id="TimeOfPrice" runat="server" BackColor="#FFFF99"></asp:Label>  
             <br />
-
+        <asp:Label id="Label1" runat="server" ></asp:Label>
         </ContentTemplate>
         
         </asp:UpdatePanel>
@@ -47,7 +47,8 @@
                 <tr>
                     <td class="auto-style2" colspan="2">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="lbl_stock" runat="server" Text="Stock" BackColor="#66FFFF"></asp:Label>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">
@@ -75,6 +76,7 @@
                 </Columns>
             </asp:GridView>
                         </td>
+                    <td> </td>
                     </tr>
                 </table>
         </div>

@@ -76,15 +76,18 @@ namespace Task
 
         protected void Timer1_Tick(object sender, EventArgs e)
         {
+            //var labels = new List<Label> { lbl0 , lbl1 };
 
-            StockPrice.Text =  GetStockPrice();
+            //foreach (var label in labels)
+            //{
+            //    label.Text = StockBAL.GetStockPrice();
+            //}
+
+                //Label1.Text = StockBAL.GetStockPrice();
+                StockPrice.Text =  StockBAL.GetStockPrice();
                 TimeOfPrice.Text = DateTime.Now.ToLongTimeString();
             
         }
-        private string GetStockPrice()
-        {
-            double randomStockPrice = 50 + new Random().NextDouble();
-            return randomStockPrice.ToString("C");
-        }
+       
     }
 }

@@ -46,12 +46,24 @@ namespace DALayer
            
         };
 
-        //public static List<Stock> prices = new List<Stock>
-        //{
-        //    new Stock {Price = 1 * s},
-        //};
-        
+        public static List<Stock> prices = new List<Stock>
+        {
+            new Stock {Price = 1 },
+            new Stock {Price = 2 },
+            new Stock {Price = 3 },
+            new Stock {Price = 4 },
+            new Stock {Price = 5 },
+            new Stock {Price = 6 },
+            new Stock {Price = 7 },
+            new Stock {Price = 8 },
+            new Stock {Price = 9 },
+            new Stock {Price = 10 },
 
 
-     }
+
+        };
+
+
+
+    }
 }
