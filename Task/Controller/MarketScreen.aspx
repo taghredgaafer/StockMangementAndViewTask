@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<%--    <meta http-equiv="Refresh" content="5" />--%>
+    <%--    <meta http-equiv="Refresh" content="5" />--%>
     <title></title>
     <style type="text/css">
         .auto-style1 {
@@ -35,10 +35,10 @@
                 <tr>
                     <td class="auto-style3">
                         &nbsp;&nbsp;
-                        <asp:Label ID="lbl_price" runat="server" Text="Price"></asp:Label>
+                        <asp:Label ID="lbl_name" runat="server" Text="Stock Name"></asp:Label>
                     </td>
                     <td class="auto-style4">&nbsp;&nbsp;
-                        <asp:Label ID="lbl_name" runat="server" Text="Stock Name"></asp:Label>
+                        <asp:Label ID="lbl_price" runat="server" Text="Price"></asp:Label>
                     </td>
                 </tr>
                 </table>

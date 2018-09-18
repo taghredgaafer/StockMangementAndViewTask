@@ -52,20 +52,21 @@ namespace Task
                     //dt.Rows[i]["test"] = stockes[i].ToString();
 
                 }
-                
+
                 grd_view2.DataSource = stockes;
                 grd_view.DataSource = stockes;
                 grd_view.DataBind();
                 grd_view2.DataBind();
 
                 Response.AppendHeader("Refresh", "10");
-                
+
 
             }
 
 
 
         }
+
 
 
         protected void GridView1_SelectedIndexChanged2(object sender, EventArgs e)

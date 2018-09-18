@@ -31,15 +31,6 @@ namespace Task {
         protected global::System.Web.UI.WebControls.Label lbl_stock;
         
         /// <summary>
-        /// lbl_price control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_price;
-        
-        /// <summary>
         /// lbl_name control.
         /// </summary>
         /// <remarks>
@@ -47,6 +38,15 @@ namespace Task {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_name;
+        
+        /// <summary>
+        /// lbl_price control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_price;
         
         /// <summary>
         /// grd_view control.
