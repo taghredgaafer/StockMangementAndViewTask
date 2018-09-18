@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using BALayer;
+using System.Timers;
 
 namespace Task
 {
@@ -15,6 +16,11 @@ namespace Task
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            //System.Timers.Timer aTimer = new System.Timers.Timer();
+            //aTimer.Elapsed += new ElapsedEventHandler(Page_Load);
+            //aTimer.Interval = 1000;
+            //aTimer.Enabled = true;
             if (!IsPostBack)
             {
                 //Random rand = new Random();
@@ -46,14 +52,22 @@ namespace Task
                     //dt.Rows[i]["test"] = stockes[i].ToString();
 
                 }
+                
                 grd_view2.DataSource = stockes;
                 grd_view.DataSource = stockes;
                 grd_view.DataBind();
                 grd_view2.DataBind();
+
+                Response.AppendHeader("Refresh", "10");
+                
+
             }
+
+
+
         }
 
-        
+
         protected void GridView1_SelectedIndexChanged2(object sender, EventArgs e)
         {
             
