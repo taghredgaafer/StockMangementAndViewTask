@@ -42,7 +42,7 @@ namespace DALayer
             new Stock {ID = 28, Name = "Qihoo" },
            
         };
-        public List<Stock> GetAll()
+        public static List<Stock> GetAll()
         {
             return sto;
         }

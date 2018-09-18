@@ -37,12 +37,13 @@
                         <asp:Label ID="lbl_name" runat="server" Text="Stock Name"></asp:Label>
                     </td>
                 </tr>
-                <tr>
-                    <td class="auto-style3">
-                        &nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                </tr>
-            </table>
+                </table>
+            <asp:GridView ID="grd_view" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged2" Width="927px" AutoGenerateColumns ="False">
+                <Columns>
+                    <asp:BoundField DataField ="Name"  HeaderText =" Stock Name"/>
+                <%--     <asp:BoundField DataField =" Price"  HeaderText =" Price"/>--%>
+                </Columns>
+            </asp:GridView>
         </div>
     </form>
 </body>

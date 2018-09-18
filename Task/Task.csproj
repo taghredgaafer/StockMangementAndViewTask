@@ -115,6 +115,10 @@
       <Project>{365297a9-d082-463a-8315-ac9b01cd9e4d}</Project>
       <Name>BELayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DALayer\DALayer.csproj">
+      <Project>{ADF032C1-D123-42B8-8A67-6208F020C2BB}</Project>
+      <Name>DALayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
