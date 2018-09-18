@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BELayer
 {
-    class Broker
+    public class Broker
     {
         private string _name;
         public  string Name
