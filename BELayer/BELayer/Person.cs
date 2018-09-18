@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BELayer
 {
-    class Person
+    public class Person
     {
 
 

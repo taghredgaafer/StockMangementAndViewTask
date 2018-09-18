@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BELayer
 {
-    class Order
+    public class Order
     {
 
         public Nullable<int> Fk_StockID { get; set; }
