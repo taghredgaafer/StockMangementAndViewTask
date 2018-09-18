@@ -70,7 +70,7 @@
             </asp:GridView>
                         </td>
                     <td>
-            <asp:GridView ID="grd_view2" runat="server" Width="447px"  AutoGenerateColumns ="false">
+            <asp:GridView ID="grd_view2" runat="server" Width="447px"  AutoGenerateColumns ="false" OnSelectedIndexChanged="grd_view2_SelectedIndexChanged">
                 <Columns>
                     <asp:BoundField DataField ="Price"  HeaderText =" Price"/>
                 </Columns>

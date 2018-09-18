@@ -73,6 +73,10 @@ namespace Task
         {
             
         }
+        protected void grd_view2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
 
         protected void Timer1_Tick(object sender, EventArgs e)
         {
