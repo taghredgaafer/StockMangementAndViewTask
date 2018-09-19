@@ -5,10 +5,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="auto-style1">
+            <asp:Label ID="Label1" runat="server" BackColor="#99CCFF" Text="Order Screen"></asp:Label>
+            <br />
+            <br />
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Back to Previous Screen" />
             <br />
             <table>
                 <tr>
@@ -17,8 +26,8 @@
                             <Columns>
                                 <asp:BoundField DataField="Name" HeaderText=" Broker Name" />
                             </Columns>
-                             
-                           
+
+
                         </asp:GridView>
                     </td>
                     <td>
@@ -40,7 +49,7 @@
                             <Columns>
                                 <asp:BoundField DataField="Price" HeaderText=" Price" />
                             </Columns>
-                            
+
                         </asp:GridView>
 
                     </td>
@@ -49,11 +58,37 @@
                             <Columns>
                                 <asp:BoundField DataField="Name" HeaderText=" Person Name" />
                             </Columns>
-                            
+
                         </asp:GridView>
                     </td>
-                    
+
                 </tr>
+
+                <tr>
+                    <td>
+
+                        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+                        <asp:Timer ID="Timer1" OnTick="Timer1_Tick" runat="server" Interval="10000" />
+
+                        <asp:UpdatePanel ID="OrdersAdded" runat="server" UpdateMode="Conditional">
+                            <Triggers>
+                                <asp:AsyncPostBackTrigger ControlID="Timer1" />
+                            </Triggers>
+                            <ContentTemplate>
+                              Time Of Change <asp:Label id="TimeOfChange" runat="server"></asp:Label>
+                                <asp:GridView ID="grd_view5" runat="server" Width="309px" AutoGenerateColumns="false" OnSelectedIndexChanged="grd_view5_SelectedIndexChanged">
+                            <Columns>
+                                <asp:BoundField DataField="Quantity" HeaderText=" New Order" />
+                            </Columns>
+
+                        </asp:GridView>
+
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+
+                    </td>
+                </tr>
+
             </table>
             <br />
             <br />

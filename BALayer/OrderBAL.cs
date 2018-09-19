@@ -14,5 +14,10 @@ namespace BALayer
         {
             return OrderDAL.ord;
         }
+
+        public static List<Order> GetNewOrders()
+        {
+            return OrderDAL.Neword;
+        }
     }
 }

@@ -23,17 +23,7 @@ namespace Task
             //aTimer.Enabled = true;
             if (!IsPostBack)
             {
-                //Random rand = new Random();
-                //List<Int32> Price = new List<Int32>();
-                //for (Int32 i = 0; i < 101; i++)
-                //{
-                //    Int32 curValue = rand.Next(1, 100);
-                //    while (Price.Exists(value => value == curValue))
-                //    {
-                //        curValue = rand.Next(1, 100);
-                //    }
-                //    Price.Add(curValue);
-                //}
+                
 
                 List<Stock> stockes = StockBAL.GetAll();
                 grd_view.Visible = true;

@@ -49,5 +49,31 @@ namespace Task
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MarketScreen.aspx");
+        }
+
+        protected void grd_view5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+            List<Order> NewOrders = OrderBAL.GetNewOrders();
+            grd_view5.Visible = true;
+            DataTable dt = new DataTable();
+            grd_view5.DataSource = NewOrders;
+            grd_view5.DataBind();
+            TimeOfChange.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private string AddNewOrder()
+        {
+            ///////
+            return "test"; 
+        }
     }
 }
