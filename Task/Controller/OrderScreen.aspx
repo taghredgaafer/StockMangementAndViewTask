@@ -98,10 +98,14 @@
                                         <asp:BoundField DataField="Comession" HeaderText=" Comession" />
                                     </Columns>
                                      <Columns>
-                                        <asp:BoundField DataField="Price" HeaderText=" Price" />
+                                        <asp:BoundField DataField="Price" HeaderText="Today Started  Price" />
                                     </Columns>
                                     
                                 </asp:GridView>
+                                
+                                <asp:Label ID="Label4" runat="server" Text="Your Order as Last Updated Price is"></asp:Label>
+                                &nbsp;:
+                                <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
                                 
                                 <asp:GridView ID="grd_view6" runat="server" Width="309px" AutoGenerateColumns="false" OnSelectedIndexChanged="grd_view6_SelectedIndexChanged">
                                     <Columns>

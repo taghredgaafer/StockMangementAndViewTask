@@ -38,7 +38,9 @@
                 <table>
                     <tr>
                         <td class="auto-style9" >
-            Stock price of "Vianet" is = <asp:Label id="StockPrice" runat="server" BackColor="#FFFF99"></asp:Label><BR />
+            Stock price of "Vianet" is = <asp:Label id="StockPrice" runat="server" BackColor="#FFFF99"></asp:Label>
+                            <asp:TextBox ID="txt" runat="server"></asp:TextBox>
+                            <BR />
             as of <asp:Label id="TimeOfPrice" runat="server" BackColor="#FFFF99"></asp:Label>  
             <br />
         <asp:Label id="Label1" runat="server" ></asp:Label>

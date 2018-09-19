@@ -47,7 +47,7 @@ namespace Task
 
                 //Response.AppendHeader("Refresh", "10");
 
-
+                
             }
 
 
@@ -76,14 +76,16 @@ namespace Task
             //}
 
             //Label1.Text = StockBAL.GetStockPrice();
-                StockPrice.Text =  StockBAL.GetStockPrice();
+                txt.Text =  StockBAL.GetStockPrice();
                 TimeOfPrice.Text = DateTime.Now.ToLongTimeString();
+            
 
 
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            Session["price"] = txt.Text;
             Response.Redirect("OrderScreen.aspx");
 
         }

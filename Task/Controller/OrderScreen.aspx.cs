@@ -17,6 +17,7 @@ namespace Task
         {
             if (!IsPostBack)
             {
+                Label3.Text  = Session[0].ToString();
                 List<Broker> brokers = BrokerBAL.GetBrokers();
                 List<Person> persons = PersonBAL.GetPersons();
                 List<Stock> stockes = StockBAL.GetTwoStock();
@@ -68,7 +69,6 @@ namespace Task
             grd_view5.DataSource = NewOrders;
             grd_view5.DataBind();
             TimeOfChange.Text = DateTime.Now.ToLongTimeString();
-            lbl.Text = "Added TO";
             List<Broker> NewBroker = BrokerBAL.GetBrokers();
             grd_view6.Visible = true;
             DataTable dt2 = new DataTable();

@@ -16,10 +16,10 @@ namespace DALayer
         };
         public static List<Order> Neword = new List<Order>
         {
-            new Order { Fk_StockID = 3 , Price = 70 , Quantity = 11 , Comession = 20},
+            new Order { Fk_StockID = 3 , Price = 50 , Quantity = 11 , Comession = 20},
             new Order { Fk_StockID = 4 , Price = 85 , Quantity = 24 , Comession = 20}
         };
-
+        
 
     }
 }
