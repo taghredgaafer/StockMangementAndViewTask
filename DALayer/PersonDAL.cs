@@ -22,5 +22,6 @@ namespace DALayer
             new Person {ID =1 , Name = "person one", Orders = OrderDAL.ord},
             new Person {ID =2 , Name = "person two", Orders = OrderDAL.ord },
         };
+       
     }
 }

@@ -14,6 +14,7 @@ namespace DALayer
         public static List<Broker> bro = new List<Broker>
         {
            new Broker { ID =1 , Name = " Broker one" , Orders = OrderDAL.ord , Persons = PersonDAL.per },
+           new Broker { ID =2 , Name = " Broker two" , Orders = OrderDAL.ord , Persons = PersonDAL.per },
 
         };
     }
