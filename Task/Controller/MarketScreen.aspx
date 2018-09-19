@@ -24,9 +24,10 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
 
+    <form id="form1" runat="server">
           <asp:ScriptManager ID="ScriptManager1" runat="server" />
+
         <asp:Timer ID="Timer1" OnTick="Timer1_Tick" runat="server" Interval="10000" />
 
         <asp:UpdatePanel ID="StockPricePanel" runat="server" UpdateMode="Conditional">
@@ -34,7 +35,7 @@
             <asp:AsyncPostBackTrigger ControlID="Timer1" />
         </Triggers>
             <ContentTemplate>
-            Stock price is <asp:Label id="StockPrice" runat="server" BackColor="#FFFF99"></asp:Label><BR />
+            Stock price of "Vianet" is = <asp:Label id="StockPrice" runat="server" BackColor="#FFFF99"></asp:Label><BR />
             as of <asp:Label id="TimeOfPrice" runat="server" BackColor="#FFFF99"></asp:Label>  
             <br />
         <asp:Label id="Label1" runat="server" ></asp:Label>
@@ -76,11 +77,13 @@
                 </Columns>
             </asp:GridView>
                         </td>
-                    <td> </td>
+                    <td> &nbsp;</td>
                     </tr>
                 </table>
         </div>
         
+
+       
 
     </form>
 </body>

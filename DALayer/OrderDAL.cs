@@ -15,5 +15,7 @@ namespace DALayer
             new Order { Fk_StockID = 1 , Price = 40 , Quantity = 10 , Comession = 10},
             new Order { Fk_StockID = 2 , Price = 55 , Quantity = 20 , Comession = 40}
         };
+
+        
     }
 }

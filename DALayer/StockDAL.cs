@@ -15,7 +15,7 @@ namespace DALayer
         public static List<Stock> sto = new List<Stock>
         {
           
-            new Stock {ID = 1 , Name = "Vianet" , Price = 1* s},
+            new Stock {ID = 1 , Name = "Vianet" , Price = 50},
             new Stock {ID = 2 , Name = "Agritek" , Price = 2 * s},
             new Stock {ID = 3 , Name = "Akamai", Price = 5* s},
             new Stock {ID = 4 , Name = "Baidu" , Price = 4* s},
@@ -45,24 +45,43 @@ namespace DALayer
             new Stock {ID = 28, Name = "Qihoo", Price = 9 * s},
            
         };
-
-        public static List<Stock> prices = new List<Stock>
+        public static List<Stock> TwoSto = new List<Stock>
         {
-            new Stock {Price = 1 },
-            new Stock {Price = 2 },
-            new Stock {Price = 3 },
-            new Stock {Price = 4 },
-            new Stock {Price = 5 },
-            new Stock {Price = 6 },
-            new Stock {Price = 7 },
-            new Stock {Price = 8 },
-            new Stock {Price = 9 },
-            new Stock {Price = 10 },
 
-
-
+            new Stock {ID = 1 , Name = "Vianet" , Price = 1* s},
+            new Stock {ID = 2 , Name = "Agritek" , Price = 2 * s},
         };
 
+
+
+        /*test*/
+        //public static double GetNewPrice()
+        //{
+        //    double Price = 50 + new Random().NextDouble();
+        //    return Price;
+        //}
+        //public static double d = StockDAL.GetNewPrice() ;
+        //public static List<Stock> prices = new List<Stock>
+        //{
+        //    new Stock {Price =  1 * d},/*ToString("C")*/
+        //    new Stock {Price = 2*d },
+        //    new Stock {Price = 3 *d },
+        //    new Stock {Price = 4*d },
+        //    new Stock {Price = 5*d },
+        //    new Stock {Price = 6*d },
+        //    new Stock {Price = 7*d},
+        //    new Stock {Price = 8 *d},
+        //    new Stock {Price = 9 *d},
+        //    new Stock {Price = 10 *d},
+
+
+
+        //};
+
+        //public static List<Stock> GetPrices()
+        //{
+        //    return StockDAL.prices;
+        //}
 
 
     }

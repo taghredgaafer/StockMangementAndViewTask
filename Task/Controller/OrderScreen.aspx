@@ -9,6 +9,42 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <br />
+            <table>
+                <tr>
+                    
+                    <td>
+                        <asp:GridView ID="grd_view2" runat="server" Width="309px" AutoGenerateColumns="false">
+                            <Columns>
+                                <asp:BoundField DataField="Name" HeaderText=" Stock Name" />
+                            </Columns>
+                        </asp:GridView>
+                    </td>
+
+                    <td>
+                        <asp:GridView ID="grd_view" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AutoGenerateColumns="false" Width="429px">
+                            <Columns>
+                                <asp:BoundField DataField="Quantity" HeaderText=" Quantity" />
+                            </Columns>
+                            <Columns>
+                                <asp:BoundField DataField="Comession" HeaderText=" Comession" />
+                            </Columns>
+                            <Columns>
+                                <asp:BoundField DataField="Price" HeaderText=" Price" />
+                            </Columns>
+                            
+                        </asp:GridView>
+
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </form>
 </body>

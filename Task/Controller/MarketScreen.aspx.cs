@@ -48,9 +48,6 @@ namespace Task
                     dt.Rows.InsertAt(toInsert, i);
                     dt.Rows.InsertAt(toInsert2, i);
 
-                    //dt.Rows[i]["Price"] = Price;
-                    //dt.Rows[i]["test"] = stockes[i].ToString();
-
                 }
 
                 grd_view2.DataSource = stockes;
@@ -77,9 +74,11 @@ namespace Task
         {
 
         }
+       
 
         protected void Timer1_Tick(object sender, EventArgs e)
-        {
+        { 
+
             //var labels = new List<Label> { lbl0 , lbl1 };
 
             //foreach (var label in labels)
@@ -87,11 +86,13 @@ namespace Task
             //    label.Text = StockBAL.GetStockPrice();
             //}
 
-                //Label1.Text = StockBAL.GetStockPrice();
+            //Label1.Text = StockBAL.GetStockPrice();
                 StockPrice.Text =  StockBAL.GetStockPrice();
                 TimeOfPrice.Text = DateTime.Now.ToLongTimeString();
-            
+
+
         }
-       
+
+        
     }
 }

@@ -25,8 +25,8 @@ namespace BELayer
         private int _price;
         public int Price
         {
-            get { return _id; }
-            set { _id = value; }
+            get { return _price; }
+            set { _price = value; }
         }
 
 
