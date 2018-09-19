@@ -61,7 +61,6 @@ namespace Task
             }
 
 
-
         }
 
 
@@ -93,6 +92,10 @@ namespace Task
 
         }
 
-        
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("OrderScreen.aspx");
+
+        }
     }
 }

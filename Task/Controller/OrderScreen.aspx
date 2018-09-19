@@ -12,7 +12,15 @@
             <br />
             <table>
                 <tr>
-                    
+                    <td>
+                        <asp:GridView ID="grd_view4" runat="server" Width="309px" AutoGenerateColumns="false" OnSelectedIndexChanged="grd_view3_SelectedIndexChanged">
+                            <Columns>
+                                <asp:BoundField DataField="Name" HeaderText=" Broker Name" />
+                            </Columns>
+                             
+                           
+                        </asp:GridView>
+                    </td>
                     <td>
                         <asp:GridView ID="grd_view2" runat="server" Width="309px" AutoGenerateColumns="false">
                             <Columns>
@@ -44,15 +52,7 @@
                             
                         </asp:GridView>
                     </td>
-                    <td>
-                        <asp:GridView ID="grd_view4" runat="server" Width="309px" AutoGenerateColumns="false" OnSelectedIndexChanged="grd_view3_SelectedIndexChanged">
-                            <Columns>
-                                <asp:BoundField DataField="Name" HeaderText=" Broker Name" />
-                            </Columns>
-                             
-                           
-                        </asp:GridView>
-                    </td>
+                    
                 </tr>
             </table>
             <br />
