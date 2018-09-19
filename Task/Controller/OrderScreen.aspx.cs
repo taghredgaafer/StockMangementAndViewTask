@@ -68,12 +68,20 @@ namespace Task
             grd_view5.DataSource = NewOrders;
             grd_view5.DataBind();
             TimeOfChange.Text = DateTime.Now.ToLongTimeString();
+            lbl.Text = "Added TO";
+            List<Broker> NewBroker = BrokerBAL.GetBrokers();
+            grd_view6.Visible = true;
+            DataTable dt2 = new DataTable();
+            grd_view6.DataSource = NewBroker;
+            grd_view6.DataBind();
+
         }
 
-        private string AddNewOrder()
+        
+
+        protected void grd_view6_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ///////
-            return "test"; 
+
         }
     }
 }

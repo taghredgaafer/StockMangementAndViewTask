@@ -9,6 +9,9 @@
         .auto-style1 {
             text-align: center;
         }
+        .auto-style2 {
+            width: 818px;
+        }
     </style>
 </head>
 <body>
@@ -63,26 +66,50 @@
                     </td>
 
                 </tr>
-
+                </table>
+            <table>
                 <tr>
-                    <td>
+                    <td class="auto-style2">
 
                         <asp:ScriptManager ID="ScriptManager1" runat="server" />
                         <asp:Timer ID="Timer1" OnTick="Timer1_Tick" runat="server" Interval="10000" />
+
+                        <br />
+
+                        <asp:Label ID="Label2" runat="server" BackColor="Yellow" Text="New Order"></asp:Label>
+                        <br />
+                        <br />
 
                         <asp:UpdatePanel ID="OrdersAdded" runat="server" UpdateMode="Conditional">
                             <Triggers>
                                 <asp:AsyncPostBackTrigger ControlID="Timer1" />
                             </Triggers>
                             <ContentTemplate>
-                              Time Of Change <asp:Label id="TimeOfChange" runat="server"></asp:Label>
+                                Time Of Change
+                                <asp:Label ID="TimeOfChange" runat="server" BackColor="Yellow"></asp:Label>
+
+                                <br />
+
                                 <asp:GridView ID="grd_view5" runat="server" Width="309px" AutoGenerateColumns="false" OnSelectedIndexChanged="grd_view5_SelectedIndexChanged">
-                            <Columns>
-                                <asp:BoundField DataField="Quantity" HeaderText=" New Order" />
-                            </Columns>
-
-                        </asp:GridView>
-
+                                    <Columns>
+                                        <asp:BoundField DataField="Quantity" HeaderText=" Quantity" />
+                                    </Columns>
+                                    <Columns>
+                                        <asp:BoundField DataField="Comession" HeaderText=" Comession" />
+                                    </Columns>
+                                     <Columns>
+                                        <asp:BoundField DataField="Price" HeaderText=" Price" />
+                                    </Columns>
+                                    
+                                </asp:GridView>
+                                
+                                <asp:GridView ID="grd_view6" runat="server" Width="309px" AutoGenerateColumns="false" OnSelectedIndexChanged="grd_view6_SelectedIndexChanged">
+                                    <Columns>
+                                        <asp:BoundField DataField="Name" HeaderText=" Added to : Broker Name" />
+                                    </Columns>
+                                    
+                                    
+                                </asp:GridView>
                             </ContentTemplate>
                         </asp:UpdatePanel>
 
